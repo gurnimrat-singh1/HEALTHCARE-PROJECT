@@ -4,6 +4,10 @@ const errorHandler = require('./middleware/errorHandler');
 const cors = require('cors');
 const port = process.env.PORT || 5000;
 
+//env file config
+const dotenv=require("dotenv");
+dotenv.config();
+
 connectDb();
 const app = express();
 
